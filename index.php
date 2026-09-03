@@ -1,15 +1,12 @@
 <?php
-$test = 10;
-$test = 10 + 10;
-$test = 10 - 9;
-$test = 10 / 1;
-$test = 10 * 1;
-$test = $test / 1;
-$test += 3;
-$test *= 3;
-$a = 1;
-$b = $a++;
-var_dump($a);
-$test = sin(pi());
+$test = 'yolo';
+$test = 'yolo' . 'life';
+$test = $test . 'thug';
+$test .= 'life';
+$name = 'Marten';
+$age = 18;
+$test = $name . ' is ' . $age . ' years old';
+$test = "$name is $age years old";
+$test = 'don\'t';
 var_dump($test);
 ?>
