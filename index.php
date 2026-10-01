@@ -1,23 +1,22 @@
-<?php
-$name = 'Jamal';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Hello <?= $name ?>!</h1>
-  <ul>
-    <?php for ($i = 0; $i < 10; $i++) : ?>
-        <?php if ($i % 2 === 0) : ?>
-        <li style="color:green"><?= $i ?></li>
-        <?php else : ?>
-        <li style="color:red"><?= $i ?></li>
-        <?php endif ?>
-    <?php endfor ?>
-  </ul>
-</body>
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<?php include __DIR__ . '/partials/headers.php'; ?>
+  <body>
+    <?php include __DIR__ . '/partials/icons.php'; ?>
+    <?php include __DIR__ . '/partials/theme-select.php'; ?>
+    <?php include __DIR__ . '/partials/nav.php'; ?>
+    <main class="container">
+      <?php include __DIR__ . '/partials/hero.php'; ?>
+      <?php include __DIR__ . '/partials/featured.php'; ?>
+      <div class="row g-5">
+        <?php include __DIR__ . '/partials/posts.php'; ?>
+        <?php include __DIR__ . '/partials/sidebar.php'; ?>
+      </div>
+    </main>
+    <?php include __DIR__ . '/partials/footer.php'; ?>
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+  </body>
 </html>
