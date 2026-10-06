@@ -12,12 +12,12 @@
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/blog/"
     />
-    <script src="../assets/js/color-modes.js"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="/assets/js/color-modes.js"></script>
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9" />
     <link
       href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap"
       rel="stylesheet"
     />
-    <link href="blog.css" rel="stylesheet" />
+    <link href="/blog.css" rel="stylesheet" />
   </head>
