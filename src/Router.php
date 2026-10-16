@@ -27,3 +27,4 @@ public function match(): Route | false {
     }
     return false;
 }
+}

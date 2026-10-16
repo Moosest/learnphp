@@ -68,6 +68,32 @@ class PublicController
         view('us', compact('title', 'posts'));
     }
 
+    public function tech()
+    {
+        $title = 'Technology';
+        $posts = [
+            [
+                'title' => 'PHP 8.5 pipe operator',
+                'date' => 'October 10, 2026',
+                'author' => 'Moosest',
+                'body' => 'The new |> operator lets you chain function calls from left to right without nesting.',
+            ],
+            [
+                'title' => 'Running MariaDB in Docker',
+                'date' => 'October 12, 2026',
+                'author' => 'Moosest',
+                'body' => 'docker compose makes it easy to spin up a local database for development.',
+            ],
+            [
+                'title' => 'How Composer autoloading works',
+                'date' => 'October 14, 2026',
+                'author' => 'Moosest',
+                'body' => 'PSR-4 autoloading maps namespaces to folders, so classes load without manual require calls.',
+            ],
+        ];
+        view('tech', compact('title', 'posts'));
+    }
+
     public function test()
     {
         $db = new App\DB();

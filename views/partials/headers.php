@@ -21,3 +21,7 @@
     />
     <link href="/blog.css" rel="stylesheet" />
   </head>
+  <body>
+    <?php include __DIR__ . '/icons.php'; ?>
+    <?php include __DIR__ . '/theme-select.php'; ?>
+    <?php include __DIR__ . '/nav.php'; ?>
