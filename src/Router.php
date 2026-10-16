@@ -16,13 +16,13 @@ public static function getRoutes()
 
 public function __construct(private $path)
 {
+    $this->path = parse_url($this->path, PHP_URL_PATH);
 }
 
-public function match(): Route | false
-{
+public function match(): Route | false {
     foreach (self::$routes as $route) {
         if ($route->getPath() === $this->path) {
-            return $route;
+                return $route;
         }
     }
     return false;
